@@ -17,10 +17,19 @@ class AlgoStrategie(models.Model):
         string='Investment',
     )
 
-    def run(self, investment):
+    def start(self, investment):
         self.investment_id = investment
+        self.run()
+
+    def run(self):
+        if not self.investment_id:
+            return
         if self.strategy == 'golden_cross':
-            self._golden_cross()
+            return self._golden_cross()
+    # inherit:
+    #   super().run()
+    #   if self.strategy == 'new_strategy':
+    #       return self._new_strategy()
 
     def _golden_cross(self):
         pass
