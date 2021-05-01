@@ -5,17 +5,23 @@ class FinancialProduct(models.Model):
     _name = 'financial.product'
     _description = 'Financial Product, Stock, Currency ...'
 
+    base = fields.Char(
+        string='Base Currency',
+    )
+    lines_ids = fields.One2many(
+        comodel_name='portfolio.line',
+        inverse_name='f_product_id',
+        string='Portfolio Lines',
+    )
     name = fields.Char(
         string='Description',
+    )
+    quote = fields.Char(
+        string='Quote Currency',
     )
     ticker = fields.Char(
         string='Ticker',
     )
     total_amount = fields.Float(
         string='Total Amount',
-    )
-    lines_ids = fields.One2many(
-        comodel_name='portfolio.line',
-        inverse_name='f_product_id',
-        string='Portfolio Lines',
     )
