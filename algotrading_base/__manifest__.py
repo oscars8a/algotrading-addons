@@ -25,11 +25,10 @@
     'license': 'LGPL-3',
     'category': 'Trading',
     'version': '14.0.1.0.0',
-    'depends': [
-        'board',
-    ],
     'data': [
         'security/ir.model.access.csv',
+        'views/algotrading_base.xml',
+        'views/exchange_exchange.xml',
         'views/portfolio_portfolio.xml',
     ],
     'application': True,

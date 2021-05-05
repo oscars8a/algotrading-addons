@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="portfolio_portfolio_action" model="ir.actions.act_window">
+        <field name="name">Portfolio</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">portfolio.portfolio</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+    </record>
+    <menuitem id="portfolio_portfolio_menu"
+        name="Portfolio" parent="algotrading_base_menu_root" action="portfolio_portfolio_action" sequence="1"/>
+</odoo>
