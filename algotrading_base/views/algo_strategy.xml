@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="algo_strategy_action" model="ir.actions.act_window">
+        <field name="name">Strategies</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">algo.strategy</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="algo_strategy_menu"
+        parent="algotrading_base_menu_root" action="algo_strategy_action" sequence="5"/>
+</odoo>

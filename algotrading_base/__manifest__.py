@@ -27,8 +27,12 @@
     'version': '14.0.1.0.0',
     'data': [
         'security/ir.model.access.csv',
+        'views/algo_investment.xml',
+        'views/algo_strategy.xml',
         'views/algotrading_base.xml',
         'views/exchange_exchange.xml',
+        'views/financial_product.xml',
+        'views/portfolio_line.xml',
         'views/portfolio_portfolio.xml',
     ],
     'application': True,
