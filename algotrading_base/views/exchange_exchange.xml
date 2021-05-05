@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
     <record id="exchange_exchange_action" model="ir.actions.act_window">
-        <field name="name">Exchange</field>
+        <field name="name">Exchanges</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">exchange.exchange</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">kanban,tree,form</field>
     </record>
     <menuitem id="exchange_exchange_menu"
-        name="Exchange" parent="algotrading_base_menu_root" action="exchange_exchange_action" sequence="3"/>
+        parent="algotrading_base_menu_root" action="exchange_exchange_action" sequence="8"/>
 </odoo>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
+    <menuitem id="portfolio_portfolio_menu_categ" name="Porfolio" parent="algotrading_base_menu_root" sequence="1"/>
     <menuitem id="algotrading_base_menu_root"
         name="Algorithmic Trading" sequence="6" web_icon="algotrading_base,static/description/icon.png"/>
 </odoo>
