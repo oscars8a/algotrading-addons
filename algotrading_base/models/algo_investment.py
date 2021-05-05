@@ -19,6 +19,14 @@ class AlgoInvestment(models.Model):
     name = fields.Char(
         string='Description',
     )
+    status = fields.Selection(
+        [
+            ('benchmark', 'Benchmark'),
+            ('production', 'Production'),
+            ('test', 'Test'),
+        ],
+        string='status',
+    )
     strategy_id = fields.Many2one(
         comodel_name='algo.strategy',
         string='Strategy',
@@ -39,7 +47,7 @@ class AlgoInvestment(models.Model):
             ('1s', '1s'),
             ('1Ms', '1M'),
         ],
-        string='Strategy',
+        string='Temporality',
     )
     ticker = fields.Char(
         related='f_produc_id.ticker',
