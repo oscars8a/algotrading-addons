@@ -4,7 +4,7 @@
         <field name="name">Investments</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">algo.investment</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
     </record>
     <menuitem id="algo_investment_menu"
         parent="algotrading_base_menu_root" action="algo_investment_action" sequence="3"/>
