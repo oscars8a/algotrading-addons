@@ -10,7 +10,7 @@ class AlgoStrategie(models.Model):
 
     strategy = fields.Selection(
         [
-            ('golden_cross', 'Golden Cross'),
+            ('hold', 'Hold And Buy'),
         ],
         string='Strategy',
         required=True,
@@ -27,12 +27,8 @@ class AlgoStrategie(models.Model):
     def run(self):
         if not self.investment_id:
             return
-        if self.strategy == 'golden_cross':
-            return self._golden_cross()
-    # inherit:
-    #   super().run()
-    #   if self.strategy == 'new_strategy':
-    #       return self._new_strategy()
+        if self.strategy == 'hold':
+            return self._hold()
 
-    def _golden_cross(self):
+    def _hold(self):
         pass

@@ -18,8 +18,8 @@
 #
 ###############################################################################
 {
-    'name': 'Strategy Golden Cross',
-    'summary': 'Add strategy Golden Cross to scaffolding.',
+    'name': 'Algotrading Base',
+    'summary': 'Algotrading Base.',
     'author': 'Oscar Soto Ochoa',
     'website': 'https://github.com/oscars8a',
     'license': 'LGPL-3',
