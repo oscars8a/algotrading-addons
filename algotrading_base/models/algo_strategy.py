@@ -19,7 +19,7 @@ class AlgoStrategie(models.Model):
         required=True,
     )
     investment_id = fields.Many2one(
-        comodel_name='',
+        comodel_name='algo.investment',
         string='Investment',
     )
 

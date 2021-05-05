@@ -16,6 +16,9 @@ class FinancialProduct(models.Model):
         inverse_name='f_product_id',
         string='Portfolio Lines',
     )
+    logo = fields.Binary(
+        string='Logo',
+    )
     name = fields.Char(
         string='Description',
     )
