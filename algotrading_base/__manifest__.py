@@ -18,17 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Strategy Golden Cross',
-    'summary': 'Add strategy Golden Cross to scaffolding.',
+    'name': 'Algotrading Base',
+    'summary': 'Algorithmic trading for Odoo.',
     'author': 'Oscar Soto Ochoa',
     'website': 'https://github.com/oscars8a',
     'license': 'LGPL-3',
     'category': 'Trading',
     'version': '14.0.1.0.0',
     'depends': [
-        'algotrading_base',
+        'board',
     ],
-    # 'data': [
-    # ],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/portfolio_portfolio.xml',
+    ],
     'application': True,
 }

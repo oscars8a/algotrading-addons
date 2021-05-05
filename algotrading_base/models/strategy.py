@@ -8,6 +8,9 @@ class AlgoStrategie(models.Model):
     _name = 'algo.strategy'
     _description = 'Strategy'
 
+    name = fields.Char(
+        string='Description',
+    )
     strategy = fields.Selection(
         [
             ('hold', 'Hold And Buy'),
