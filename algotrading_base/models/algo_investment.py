@@ -9,7 +9,7 @@ class AlgoInvestment(models.Model):
     _description = 'Investment'
 
     exchange_id = fields.Many2one(
-        comodel_name='algo.exchange',
+        comodel_name='exchange.exchange',
         string='Exchange',
     )
     f_produc_id = fields.Many2one(
@@ -37,9 +37,9 @@ class AlgoInvestment(models.Model):
             ('1d', '1d'),
             ('3d', '3d'),
             ('1s', '1s'),
-            ('1M', '1M'),
+            ('1Ms', '1M'),
         ],
-        string='Temporality',
+        string='Strategy',
     )
     ticker = fields.Char(
         related='f_produc_id.ticker',
