@@ -28,7 +28,4 @@
     'depends': [
         'algotrading_base',
     ],
-    # 'data': [
-    # ],
-    'application': True,
 }
