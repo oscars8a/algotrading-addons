@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="binance_exchange" model="exchange.exchange">
+        <field name="name">Binance</field>
+        <field name="logo" type="base64" file="algotrading_base/static/img/brand_binance.png"/>
+    </record>
+</odoo>

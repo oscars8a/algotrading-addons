@@ -26,6 +26,7 @@
     'category': 'Trading',
     'version': '14.0.1.0.0',
     'data': [
+        'data/exchanges.xml',
         'security/ir.model.access.csv',
         'views/algo_investment.xml',
         'views/algo_strategy.xml',
