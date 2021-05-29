@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class FinancialProduct(models.Model):
-    _name = 'financial.product'
-    _description = 'Financial Product, Stock, Currency ...'
+    _name = 'asset.asset'
+    _description = 'Asset, Stock, Currency ...'
 
     base = fields.Char(
         string='Base Currency',
