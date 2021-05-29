@@ -32,7 +32,7 @@
         'views/algo_strategy.xml',
         'views/algotrading_base.xml',
         'views/exchange_exchange.xml',
-        'views/financial_product.xml',
+        'views/asset_asset.xml',
         'views/portfolio_line.xml',
         'views/portfolio_portfolio.xml',
     ],

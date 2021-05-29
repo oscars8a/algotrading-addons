@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="asset_asset_action" model="ir.actions.act_window">
+        <field name="name">Financial Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">asset.asset</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+    <menuitem id="asset_asset_menu"
+        parent="algotrading_base_menu_root" action="asset_asset_action" sequence="13"/>
+</odoo>

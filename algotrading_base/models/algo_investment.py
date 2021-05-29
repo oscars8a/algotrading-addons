@@ -13,7 +13,7 @@ class AlgoInvestment(models.Model):
         string='Exchange',
     )
     f_produc_id = fields.Many2one(
-        comodel_name='financial.product',
+        comodel_name='asset.asset',
         string='Product',
     )
     name = fields.Char(

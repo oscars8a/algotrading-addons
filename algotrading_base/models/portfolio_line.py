@@ -7,9 +7,10 @@ from odoo import fields, models
 class PortfolioLine(models.Model):
     _name = 'portfolio.line'
     _description = 'Portfolio line'
+    _order = 'portfolio_id'
 
     f_product_id = fields.Many2one(
-        comodel_name='financial.product',
+        comodel_name='asset.asset',
         string='Product',
     )
     exchange_id = fields.Many2one(

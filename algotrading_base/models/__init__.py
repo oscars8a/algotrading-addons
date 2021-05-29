@@ -4,6 +4,6 @@
 from . import algo_investment
 from . import algo_strategy
 from . import exchange_exchange
-from . import financial_product
+from . import asset_asset
 from . import portfolio_line
 from . import portfolio_portfolio

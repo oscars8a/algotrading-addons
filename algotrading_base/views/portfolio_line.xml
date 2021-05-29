@@ -1,5 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
+    <record id="portfolio_line_view_tree" model="ir.ui.view">
+        <field name="model">portfolio.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="portfolio_id"/>
+                <field name="exchange_id"/>
+                <field name="f_product_id"/>
+                <field name="qty"/>
+                <field name="amount"/>
+            </tree>
+        </field>
+    </record>
     <record id="portfolio_line_action" model="ir.actions.act_window">
         <field name="name">Portfolio Lines</field>
         <field name="type">ir.actions.act_window</field>
