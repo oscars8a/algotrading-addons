@@ -1,6 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 exchange_access_all,Exchange Access All,model_exchange_exchange,base.group_user,1,0,0,0
-financial_product_access_all,Financial Product Access All,model_financial_product,base.group_user,1,1,1,1
+financial_product_access_all,Asset Access All,model_asset_asset,base.group_user,1,1,1,1
 investment_access_all,Investment Access All,model_algo_investment,base.group_user,1,1,1,1
 portfolio_line_access_all,Portfolio Line Access All,model_portfolio_line,base.group_user,1,1,1,1
 portfolio_portfolio_access_all,Portfolio Line Access All,model_portfolio_portfolio,base.group_user,1,1,1,1
